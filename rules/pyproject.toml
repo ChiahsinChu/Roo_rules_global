@@ -1,0 +1,53 @@
+# SPDX-License-Identifier: LGPL-3.0-or-later
+
+[build-system]
+requires = [
+    "setuptools>=45",
+    "wheel",
+    "setuptools_scm[toml]>=6.2",
+    "hatch-fancy-pypi-readme",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "<pname>"
+dynamic = ["version", "readme"]
+description = "ADMP in PyTorch backend"
+license = { file = ".license-header.txt" }
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/ChiahsinChu/<project>"
+
+[tool.setuptools_scm]
+write_to = "<pname>/_version.py"
+local_scheme = "no-local-version"
+
+[tool.setuptools.packages.find]
+include = ["<pname>"]
+
+[tool.setuptools.dynamic]
+readme = {file = "README.md", content-type = "text/markdown"}
+
+[tool.hatch.metadata.hooks.fancy-pypi-readme]
+content-type = "text/markdown"
+
+[[tool.hatch.metadata.hooks.fancy-pypi-readme.fragments]]
+path = "README.md"
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "pytest-cov",
+]
+docs = [
+    "mkdocs>=1.5.0",
+    "mkdocs-material>=9.0.0",
+    "mkdocstrings[python]>=0.20.0",
+    "mkdocs-glightbox>=0.3.0",
+    "pymdown-extensions>=10.0.0",
+    "mkdocs-git-revision-date-localized-plugin>=1.2.0",
+    "mkdocs-awesome-pages-plugin>=2.8.0",
+    "mkdocs-gen-files>=0.5.0",
+    "griffe>=0.48.0"
+]
