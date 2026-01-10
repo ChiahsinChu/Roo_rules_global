@@ -6,8 +6,18 @@ Put `rules*/` in this repository to `.roo/` folder in your workspace or the glob
 
 ## Usage
 
-```shell
-git clone git@github.com:ChiahsinChu/Roo_rules_global.git .roo
+```bash
+git clone --recursive git@github.com:ChiahsinChu/Roo_rules_global.git .roo
+# or after cloning:
+git submodule update --init --recursive
+```
+
+To update the `external/gh_workflows` submodule to the latest version:
+
+```bash
+git submodule update --remote external/gh_workflows
+git add external/gh_workflows
+git commit -m "chore: add gh_workflows submodule"
 ```
 
 ## 📋 Rule Documents Summary

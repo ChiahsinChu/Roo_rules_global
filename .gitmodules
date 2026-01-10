@@ -1,0 +1,3 @@
+[submodule "external/gh_workflows"]
+	path = external/gh_workflows
+	url = git@github.com:ChiahsinChu/gh_workflows.git
