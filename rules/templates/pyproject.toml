@@ -12,7 +12,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "<pname>"
 dynamic = ["version", "readme"]
-description = "ADMP in PyTorch backend"
+description = "<description>"
 license = { file = ".license-header.txt" }
 dependencies = []
 
@@ -20,10 +20,11 @@ dependencies = []
 Homepage = "https://github.com/ChiahsinChu/<project>"
 
 [tool.setuptools_scm]
-write_to = "<pname>/_version.py"
+write_to = "src/<pname>/_version.py"
 local_scheme = "no-local-version"
 
 [tool.setuptools.packages.find]
+where = ["src"]
 include = ["<pname>"]
 
 [tool.setuptools.dynamic]
