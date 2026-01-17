@@ -30,13 +30,15 @@ git commit -m "chore: add gh_workflows submodule"
 | [`03.setup_protocal.md`](./rules/03.setup_protocal.md)         | Action Protocol | Project Initialization, Config Files, Git Setup, CI/CD                                               | Python, C++                 |
 | [`04.environment.md`](./rules/04.environment.md)               | Tools           | Package Managers (micromamba/mamba/conda/pip), Shell Scripts, Build Systems                          | Python, C++                 |
 | [`05.document_lifecycle.md`](./rules/05.document_lifecycle.md) | Governance      | Status Definitions, Header Block, Permissions, Changelog Format, Document References Index           | All                         |
+| [`06.git.md`](./rules/06.git.md)                               | Workflow        | Commit conventions, Branching strategy, Pre-commit hooks                                              | All                         |
+| [`07.badges.md`](./rules/07.badges.md)                         | Documentation   | Test coverage badges, Docstring coverage badges, Badge generation                                    | Python                      |
 
 ### Mode-Specific Rules
 
-| Directory                                      | Status |
-| ---------------------------------------------- | ------ |
-| [`rules-architect/`](./rules-architect/)       | Empty  |
-| [`rules-ask/`](./rules-ask/)                   | Empty  |
-| [`rules-code/`](./rules-code/)                 | Empty  |
-| [`rules-debug/`](./rules-debug/)               | Empty  |
-| [`rules-orchestrator/`](./rules-orchestrator/) | Empty  |
+| Directory                                      | Status                    |
+| ---------------------------------------------- | ------------------------- |
+| [`rules-architect/`](./rules-architect/)       | Empty                     |
+| [`rules-ask/`](./rules-ask/)                   | Empty                     |
+| [`rules-code/`](./rules-code/)                 | Empty                     |
+| [`rules-debug/`](./rules-debug/)               | Empty                     |
+| [`rules-orchestrator/`](./rules-orchestrator/) | [`python.md`](./rules-orchestrator/python.md) |
